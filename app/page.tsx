@@ -30,7 +30,7 @@ export default function Home() {
   }, []);
 
   const data = useMemo(() => {
-    if (!runSimulation) return null;
+    if (!runSimulation || !simulationKey) return null;
 
     const simulator = new EconomicSimulator(parameters).simulate();
     const assessment = simulator.getAssessment();

@@ -50,14 +50,14 @@ export function calculateDebtProgression(
 
   // Initial values
   let currentNominalDebt = params.initialDebt;
-  let currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear();
   let inflationFactor = 1;
   let currentGDP = params.initialGDP;
-  let baseInterestRate = params.averageInterestRate;
+  const baseInterestRate = params.averageInterestRate;
 
   // Population tracking
   let currentPopulation = params.initialPopulation || 330; // Default to ~US population in millions
-  let basePopulationGrowthRate = params.basePopulationGrowthRate || 0.007; // Default ~0.7% annual growth
+  const basePopulationGrowthRate = params.basePopulationGrowthRate || 0.007; // Default ~0.7% annual growth
 
   // Generate a default deficit array if one wasn't fully provided
   const deficits =
@@ -77,7 +77,7 @@ export function calculateDebtProgression(
     let yearGDPGrowthRate = params.baseGDPGrowthRate;
     let yearInterestRate = baseInterestRate;
     let yearPopulationGrowthRate = basePopulationGrowthRate;
-    let events: EconomicEvent[] = [];
+    const events: EconomicEvent[] = [];
     let eventDeficitImpact = 0;
 
     // Process random events if enabled

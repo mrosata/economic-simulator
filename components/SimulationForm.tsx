@@ -224,7 +224,7 @@ export default function SimulationForm({
               type="number"
               id="basePopulationGrowthRate"
               name="basePopulationGrowthRate"
-              value={parameters.basePopulationGrowthRate * 100}
+              value={(parameters.basePopulationGrowthRate ?? 0) * 100}
               onChange={(e) =>
                 handleInputChange({
                   ...e,
