@@ -22,7 +22,7 @@ export default function SimulationResults({ data }: SimulationResultsProps) {
       <div className="flex flex-col gap-4 w-full max-w-[2000px] mx-auto">
         <h2 className="text-2xl font-semibold mb-2">Assessment</h2>
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md border border-gray-200 dark:border-gray-700">
-          <div className="overflow-x-auto">
+          <div className="overflow-x-auto overflow-y-visible">
             <table className="w-full">
               <tbody>
                 <tr className="border-b border-gray-200 dark:border-gray-700">
