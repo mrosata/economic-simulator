@@ -22,7 +22,7 @@ export default function SimulationResults({ data }: SimulationResultsProps) {
       <div className="flex flex-col gap-4 w-full max-w-[2000px] mx-auto">
         <h2 className="text-2xl font-semibold mb-2">Assessment</h2>
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md border border-gray-200 dark:border-gray-700">
-          <div className="overflow-x-auto overflow-y-visible">
+          <div className="overflow-y-visible">
             <table className="w-full">
               <tbody>
                 <tr className="border-b border-gray-200 dark:border-gray-700">
@@ -231,7 +231,7 @@ export default function SimulationResults({ data }: SimulationResultsProps) {
           </div>
         </div>
 
-        <div className="mt-4 bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-x-auto overflow-y-visible border border-gray-200 dark:border-gray-700 p-4">
+        <div className="mt-4 bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-y-visible border border-gray-200 dark:border-gray-700 p-4">
           <h3 className="text-lg font-semibold mb-3">Key Metrics</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
             <div className="bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
