@@ -122,7 +122,7 @@ export function calculateDebtProgression(
             }
           } else if (yearInEvent < event.duration) {
             description = `(Year ${yearInEvent + 1} of ${event.duration})`;
-          } else if (yearInEvent < totalDuration) {
+          } else if (yearInEvent <= totalDuration) {
             description = `(Aftermath year ${
               yearInEvent - event.duration + 1
             } of ${event.aftereffectsDuration})`;

@@ -61,9 +61,8 @@ export class EventSimulator {
 
     // Process ongoing events first
     this.ongoing.forEach((data, type) => {
+      data.yearsRemaining--;
       if (data.yearsRemaining > 0) {
-        data.yearsRemaining--;
-
         // Check if event transitions to aftermath phase
         if (
           data.yearsRemaining === data.event.aftereffectsDuration &&
